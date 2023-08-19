@@ -35,7 +35,7 @@
         <div
           class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          <!-- first card  -->
+          <!-- triangle  -->
           <div class="card bg-base-100 shadow-xl">
             <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
             <div class="card-body">
@@ -73,7 +73,7 @@
               </div>
             </div>
           </div>
-          <!-- second card  -->
+          <!-- rectsngle  -->
           <div class="card bg-base-100 shadow-xl">
             <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
             <div class="card-body">
@@ -110,7 +110,7 @@
               </div>
             </div>
           </div>
-          <!-- Third card  -->
+          <!-- parallelogram  -->
           <div class="card bg-base-100 shadow-xl">
             <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
             <div class="card-body">
@@ -148,6 +148,80 @@
             </div>
           </div>
 
+          <!-- rhombus  -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl">Rhombus</h2>
+              <p class="text-center">Area (A) = 0.5 X d1 X d2</p>
+              <p>
+                <input
+                  type="text"
+                  class="border text-xl w-20 rounded bg-gray-200 p-1 text-white"
+                  placeholder="d1"
+                  id="rhombus-d1"
+                />
+                <span class="">cm</span>
+                <input
+                  type="text"
+                  class="border text-xl w-20 rounded bg-gray-200 p-1 text-white ml-2"
+                  placeholder="d2"
+                  id="rhombus-d2"
+                />
+                <span class="">cm</span>
+              </p>
+              <p class="text-xl">
+                Area :
+                <span class="font-bold" id="rhombus-area-value">0</span> cm<sup
+                  >2</sup
+                >
+              </p>
+              <div class="card-actions">
+                <button id="rhombus-calculation" class="btn btn-primary w-full">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pentagon  -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-center text-2xl">Pentagon</h2>
+              <p class="text-center">Area (A) = 0.5 X p X a</p>
+              <p>
+                <input
+                  type="text"
+                  class="border text-xl w-20 rounded bg-gray-200 p-1 text-white"
+                  placeholder="Perimeter"
+                  id="pentagon-p"
+                />
+                <span class="">cm</span>
+                <input
+                  type="text"
+                  class="border text-xl w-20 rounded bg-gray-200 p-1 text-white ml-2"
+                  placeholder="Apothem"
+                  id="pentagon-a"
+                />
+                <span class="">cm</span>
+              </p>
+              <p class="text-xl">
+                Area :
+                <span class="font-bold" id="pentagon-area-value">0</span> cm<sup
+                  >2</sup
+                >
+              </p>
+              <div class="card-actions">
+                <button
+                  id="pentagon-calculation"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
           <!-- ellipse card  -->
           <div class="card bg-base-100 shadow-xl">
             <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
@@ -185,6 +259,7 @@
         </div>
         <div class="w-[300px]">
           <h4 class="text-2xl">Area Calculation</h4>
+          <div id="calculation-entry"></div>
         </div>
       </section>
     </main>
