@@ -78,3 +78,6 @@ document
 
     addToAreaEntry("Ellipse", areaTwoDecimal);
   });
+document.getElementById("message").addEventListener("mouseover", function () {
+  document.getElementById("message").innerText = "Thanks and take my love.";
+});
